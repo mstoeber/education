@@ -20,7 +20,7 @@ install:
 script:
   - echo "We create a cool list of all perfect education files..."
   - cd ./Perfect-Education
-  - cat * > PerfectAll
+  - cat *.txt > PerfectAll
 
 
 after_script:
