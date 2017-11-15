@@ -1,0 +1,28 @@
+language: generic
+
+sudo: required
+
+notifications: 
+  email:
+    recipients:
+      - test@example.com
+
+    on_success: always
+    on_failure: always
+
+
+before_install:
+  - echo "Made by Martin Stöber for Verfahren und Werkzeuge moderner Softwareentwicklung (BHTB MIM 12 W17) - LE CONTINOUS DELIVERY"
+
+install:
+  - echo "Nothing to install required :)"
+
+script:
+  - echo "We create a cool list of all perfect education files..."
+  - cd ./Perfect-Education
+  - cat * > PerfectAll
+
+
+after_script:
+  - echo "Now all the perfect stuff is in one file :) \n"
+  - echo "$(<PerfectAll)"
